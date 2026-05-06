@@ -1,0 +1,33 @@
+/* Geist Mono fallback via system fonts - NO external fonts for performance */
+@font-face {
+  font-family: 'Geist Mono';
+  src: local('SF Mono'), local('Fira Code'), local('Monaco'), local('Consolas'), local('Menlo');
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Geist Mono', 'SF Mono', 'Fira Code', monospace;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0a0a0a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}

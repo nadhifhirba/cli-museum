@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "cli-museum-capture": {
+      "command": "node",
+      "args": ["/Users/malka/cli-museum/services/mcp-capture/dist/index.js"],
+      "env": {
+        "MUSEUM_WS_URL": "ws://localhost:8765",
+        "DETECTION_MODE": "regex"
+      },
+      "description": "Capture quotable moments from CLI sessions to the Quote Museum"
+    }
+  }
+}

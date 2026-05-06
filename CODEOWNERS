@@ -1,0 +1,9 @@
+# CLI Quote Museum - Code Owners
+# Default owners for everything
+* @nhadesign
+
+# Data updates
+/src/data/ @nhadesign
+
+# Infrastructure
+/.github/ @nhadesign

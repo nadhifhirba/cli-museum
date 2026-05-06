@@ -1,0 +1,50 @@
+# Kodus Agent Readiness Configuration
+# https://github.com/kodustech/agent-readiness
+
+project:
+  name: CLI Quote Museum
+  type: node
+  description: A curated collection of memorable lines from CLI coding sessions
+
+# Minimum maturity level required for CI
+minLevel: 5
+
+# Pillar configurations
+pillars:
+  styleLinting:
+    enabled: true
+    required: true
+    
+  testing:
+    enabled: true
+    required: true
+    coverage:
+      threshold: 80
+      
+  documentation:
+    enabled: true
+    required: true
+    
+  devEnvironment:
+    enabled: true
+    required: true
+    containerization: true
+    
+  cicd:
+    enabled: true
+    required: true
+    
+  codeHealth:
+    enabled: true
+    required: true
+    
+  security:
+    enabled: true
+    required: true
+
+# Ignore patterns
+ignore:
+  - node_modules/**
+  - dist/**
+  - .git/**
+  - '*.log'
